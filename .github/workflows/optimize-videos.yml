@@ -1,0 +1,64 @@
+name: Optimize Videos
+
+on:
+  push:
+    paths:
+      - '**/*.mp4'
+      - '**/*.mov'
+      - '.github/workflows/optimize-videos.yml'
+    branches:
+      - main
+  pull_request:
+    types: [opened, synchronize, reopened, closed]
+    branches:
+      - main
+
+jobs:
+  optimize:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          persist-credentials: true
+
+      - name: Install FFmpeg
+        run: sudo apt-get update && sudo apt-get install -y ffmpeg
+
+      - name: Optimize MP4 videos
+        run: |
+          find / -type f \( -name "*.mp4" -o -name "*.mov" \) | while read video; do
+            output=".github/output/${video%.*}.mp4"
+            mkdir -p "$(dirname "$output")"
+            ffmpeg -i "$video" \
+              -c:v libx264 \
+              -preset slow \
+              -crf 23 \
+              -c:a aac \
+              -b:a 128k \
+              -movflags +faststart \
+              "$output"
+          done
+
+      - name: Generate WebM versions
+        run: |
+          find / -type f \( -name "*.mp4" -o -name "*.mov" \) | while read video; do
+            output=".github/output/${video%.*}.mp4"
+            mkdir -p "$(dirname "$output")"
+            ffmpeg -i "$video" \
+              -c:v libvpx-vp9 \
+              -crf 30 \
+              -b:v 0 \
+              -c:a libopus \
+              -b:a 128k \
+              "$output"
+          done
+
+      - name: Fetch latest changes
+        run: git pull origin main
+
+      - name: Commit & Push changes
+        uses: actions-js/push@master
+        with:
+          branch: main
+          github_token: ${{ secrets.GITHUB_TOKEN }}
