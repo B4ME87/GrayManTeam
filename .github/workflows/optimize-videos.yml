@@ -28,29 +28,16 @@ jobs:
       - name: Optimize MP4 videos
         run: |
                   find . -type f \( -name "*.mp4" -o -name "*.mov" \) | grep -v 'github' | while read -r video; do
-
-                    echo "Ścieżka video: $video"
-                    relative_path="${video#./}"
-                    echo "Ścieżka relatywna: $relative_path"
-                    relative_path2=$(realpath --relative-to="$PWD" "$video")
-                    echo "Ścieżka relatywna: $relative_path2"
-
-                    basename_path=$(basename "$video")
-                    dirname_path=$(dirname "$video")
-                    echo "Basename: $basename_path"
-                    echo "Dirname: $dirname_path"
-                    echo "output=.github/output/${relative_path%.*}.mp4"
-
-                    # output=".github/output/${relative_path%.*}.mp4"
-                    # mkdir -p "$(dirname "$output")"
-                    # ffmpeg -i "$video" \
-                    #   -c:v libx264 \
-                    #   -preset slow \
-                    #   -crf 23 \
-                    #   -c:a aac \
-                    #   -b:a 128k \
-                    #   -movflags +faststart \
-                    #   "$output"
+                    output=".github/output/${relative_path%.*}.mp4"
+                    mkdir -p "$(dirname "$output")"
+                    ffmpeg -i "$video" \
+                      -c:v libx264 \
+                      -preset slow \
+                      -crf 23 \
+                      -c:a aac \
+                      -b:a 128k \
+                      -movflags +faststart \
+                      "$output"
                   done
 
       # - name: Generate WebM versions
