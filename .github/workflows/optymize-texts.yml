@@ -8,6 +8,7 @@ on:
     types: [opened, synchronize, reopened, closed]
     branches:
       - main
+  workflow_dispatch:
 
 env:
   CONTENT_SERVER: "${{ secrets.CONTENT_SERVER }}"
