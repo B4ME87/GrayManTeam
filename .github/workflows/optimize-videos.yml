@@ -27,8 +27,9 @@ jobs:
 
       - name: Optimize MP4 videos
         run: |
-          find / -type f \( -name "*.mp4" -o -name "*.mov" \) | while read video; do
-            output=".github/output/${video%.*}.mp4"
+          find . -type f \( -name "*.mp4" -o -name "*.mov" \) | while read video; do
+            relative_path="${video#./}"
+            output=".github/output/${relative_path%.*}.mp4"
             mkdir -p "$(dirname "$output")"
             ffmpeg -i "$video" \
               -c:v libx264 \
