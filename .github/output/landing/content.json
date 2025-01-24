@@ -1,6 +1,12 @@
 {
   "sections": [
     {
+      "id": "01-hero-mobile",
+      "video": {
+        "mp4": "https://raw.githubusercontent.com/michal-michaluk/GrayManTeam/refs/heads/main/.github/output//01-hero-mobile.mp4"
+      }
+    },
+    {
       "id": "01-hero",
       "video": {},
       "content": "https://raw.githubusercontent.com/michal-michaluk/GrayManTeam/refs/heads/main/.github/output//01-hero.md"
