@@ -5,7 +5,7 @@
 
 Treść są uporządkowane w katalogach:
 <img width="818" alt="image" src="https://github.com/user-attachments/assets/cd3a9bff-587b-4f59-b087-ff423b108694" />
-**UWAGA:** katalog .github należy zignorować.
+**UWAGA:** na ten moment jest tylko jeden katalog z treścią "landing", .github należy zignorować to część techniczna.
 
 Po wybraniu katalogu widoczne będą sekcje:
 <img width="708" alt="image" src="https://github.com/user-attachments/assets/776b8556-ef76-433d-978e-e9375acb25e4" />
