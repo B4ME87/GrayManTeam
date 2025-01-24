@@ -27,34 +27,34 @@ jobs:
 
       - name: Optimize MP4 videos
         run: |
-                  find . -type f \( -name "*.mp4" -o -name "*.mov" \) | grep -v 'github' | while read -r video; do
-                    relative_path=$(realpath --relative-to="$PWD" "$video")  
-                    output=".github/output/${relative_path%.*}.mp4"
-                    mkdir -p "$(dirname "$output")"
-                    ffmpeg -i "$video" \
-                      -c:v libx264 \
-                      -preset slow \
-                      -crf 23 \
-                      -c:a aac \
-                      -b:a 128k \
-                      -movflags +faststart \
-                      "$output"
-                  done
+            find . -type f \( -name "*.webm" -o -name "*.mp4" -o -name "*.mov" \) | grep -v 'github' | while read -r video; do
+              relative_path=$(realpath --relative-to="$PWD" "$video")  
+              output=".github/output/${relative_path%.*}.mp4"
+              mkdir -p "$(dirname "$output")"
+              ffmpeg -i "$video" \
+                -c:v libx264 \
+                -preset slow \
+                -crf 23 \
+                -c:a aac \
+                -b:a 128k \
+                -movflags +faststart \
+                "$output"
+            done
 
-      # - name: Generate WebM versions
-      #   run: |
-      #     find . -type f \( -name "*.mp4" -o -name "*.mov" \) | while read video; do
-      #       relative_path="${video#./}"
-      #       output=".github/output/${relative_path%.*}.mp4"
-      #       mkdir -p "$(dirname "$output")"
-      #       ffmpeg -i "$video" \
-      #         -c:v libvpx-vp9 \
-      #         -crf 30 \
-      #         -b:v 0 \
-      #         -c:a libopus \
-      #         -b:a 128k \
-      #         "$output"
-      #     done
+      - name: Generate WebM versions
+        run: |
+          find . -type f \( -name "*.webm" -o *.mp4" -o -name "*.mov" \) | grep -v 'github' | while read -r video; do
+            relative_path=$(realpath --relative-to="$PWD" "$video")  
+            output=".github/output/${relative_path%.*}.mp4"
+            mkdir -p "$(dirname "$output")"
+            ffmpeg -i "$video" \
+              -c:v libvpx-vp9 \
+              -crf 30 \
+              -b:v 0 \
+              -c:a libopus \
+              -b:a 128k \
+              "$output"
+          done
 
       - name: Fetch latest changes
         run: git pull origin main
