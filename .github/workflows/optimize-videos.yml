@@ -27,19 +27,21 @@ jobs:
 
       - name: Optimize MP4 videos
         run: |
-          find . -type f \( -name "*.mp4" -o -name "*.mov" \) | while read video; do
-            relative_path="${video#./}"
-            output=".github/output/${relative_path%.*}.mp4"
-            mkdir -p "$(dirname "$output")"
-            ffmpeg -i "$video" \
-              -c:v libx264 \
-              -preset slow \
-              -crf 23 \
-              -c:a aac \
-              -b:a 128k \
-              -movflags +faststart \
-              "$output"
-          done
+              # Start of Selection
+              find . -type f \( -name "*.mp4" -o -name "*.mov" \) | while read -r video; do
+                # Uzyskaj ścieżkę względną względem katalogu roboczego
+                relative_path="${video#./}"
+                output=".github/output/${relative_path%.*}.mp4"
+                mkdir -p "$(dirname "$output")"
+                ffmpeg -i "$video" \
+                  -c:v libx264 \
+                  -preset slow \
+                  -crf 23 \
+                  -c:a aac \
+                  -b:a 128k \
+                  -movflags +faststart \
+                  "$output"
+              done
 
       # - name: Generate WebM versions
       #   run: |
