@@ -5,6 +5,7 @@ on:
     paths:
       - '**/*.mp4'
       - '**/*.mov'
+      - '**/*.webm'
       - '.github/workflows/optimize-videos.yml'
     branches:
       - main
