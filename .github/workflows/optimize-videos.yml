@@ -43,8 +43,9 @@ jobs:
 
       # - name: Generate WebM versions
       #   run: |
-      #     find / -type f \( -name "*.mp4" -o -name "*.mov" \) | while read video; do
-      #       output=".github/output/${video%.*}.webm"
+      #     find . -type f \( -name "*.mp4" -o -name "*.mov" \) | while read video; do
+      #       relative_path="${video#./}"
+      #       output=".github/output/${relative_path%.*}.mp4"
       #       mkdir -p "$(dirname "$output")"
       #       ffmpeg -i "$video" \
       #         -c:v libvpx-vp9 \
