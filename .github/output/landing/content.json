@@ -1,0 +1,31 @@
+{
+  "sections": [
+    {
+      "id": "01-hero",
+      "video": {
+        "mp4": "https://raw.githubusercontent.com/michal-michaluk/GrayManTeam/refs/heads/main/.github/output//01-hero.mp4"
+      },
+      "content": "https://raw.githubusercontent.com/michal-michaluk/GrayManTeam/refs/heads/main/.github/output//01-hero.md"
+    },
+    {
+      "id": "02-trening",
+      "video": {},
+      "content": "https://raw.githubusercontent.com/michal-michaluk/GrayManTeam/refs/heads/main/.github/output//02-trening.md"
+    },
+    {
+      "id": "03-team",
+      "video": {},
+      "content": "https://raw.githubusercontent.com/michal-michaluk/GrayManTeam/refs/heads/main/.github/output//03-team.md"
+    },
+    {
+      "id": "04-oferta",
+      "video": {},
+      "content": "https://raw.githubusercontent.com/michal-michaluk/GrayManTeam/refs/heads/main/.github/output//04-oferta.md"
+    },
+    {
+      "id": "05-kontakt",
+      "video": {},
+      "content": "https://raw.githubusercontent.com/michal-michaluk/GrayManTeam/refs/heads/main/.github/output//05-kontakt.md"
+    }
+  ]
+}
