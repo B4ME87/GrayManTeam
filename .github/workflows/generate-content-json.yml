@@ -1,4 +1,4 @@
-name: Generate Content JSON
+name: Optymalizacja treści tekstowej
 
 on:
   push:

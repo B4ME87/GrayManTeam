@@ -1,4 +1,4 @@
-name: Optimize Videos
+name: Optymalizacja wideo
 
 on:
   push:
@@ -14,7 +14,7 @@ on:
       - main
 
 jobs:
-  optimize:
+  optimize-videos:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -32,7 +32,7 @@ jobs:
               relative_path=$(realpath --relative-to="$PWD" "$video")  
               output=".github/output/${relative_path%.*}.mp4"
               mkdir -p "$(dirname "$output")"
-              ffmpeg -i "$video" \
+              ffmpeg -nostdin -y -i "$video" \
                 -c:v libx264 \
                 -preset slow \
                 -crf 23 \
@@ -42,20 +42,20 @@ jobs:
                 "$output"
             done
 
-      - name: Generate WebM versions
-        run: |
-          find . -type f \( -name "*.webm" -o -name "*.mp4" -o -name "*.mov" \) | grep -v 'github' | while read -r video; do
-            relative_path=$(realpath --relative-to="$PWD" "$video")  
-            output=".github/output/${relative_path%.*}.mp4"
-            mkdir -p "$(dirname "$output")"
-            ffmpeg -i "$video" \
-              -c:v libvpx-vp9 \
-              -crf 30 \
-              -b:v 0 \
-              -c:a libopus \
-              -b:a 128k \
-              "$output"
-          done
+      # - name: Generate WebM versions
+      #   run: |
+      #     find . -type f \( -name "*.webm" -o -name "*.mp4" -o -name "*.mov" \) | grep -v 'github' | while read -r video; do
+      #       relative_path=$(realpath --relative-to="$PWD" "$video")  
+      #       output=".github/output/${relative_path%.*}.webm"
+      #       mkdir -p "$(dirname "$output")"
+      #       ffmpeg -nostdin -y -i "$video" \
+      #         -c:v libvpx-vp9 \
+      #         -crf 30 \
+      #         -b:v 0 \
+      #         -c:a libopus \
+      #         -b:a 128k \
+      #         "$output"
+      #     done
 
       - name: Fetch latest changes
         run: git pull origin main
