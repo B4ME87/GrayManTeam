@@ -3,7 +3,7 @@ name: Generate Content JSON
 on:
   push:
     paths:
-      - 'src/content/**'
+      - '**'
   workflow_dispatch:
 
 env:
