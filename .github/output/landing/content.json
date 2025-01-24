@@ -2,12 +2,16 @@
   "sections": [
     {
       "id": "01-hero",
-      "video": {},
+      "video": {
+        "webm": "https://raw.githubusercontent.com/michal-michaluk/GrayManTeam/refs/heads/main/.github/output//01-hero.webm"
+      },
       "content": "https://raw.githubusercontent.com/michal-michaluk/GrayManTeam/refs/heads/main/.github/output//01-hero.md"
     },
     {
       "id": "02-trening",
-      "video": {},
+      "video": {
+        "webm": "https://raw.githubusercontent.com/michal-michaluk/GrayManTeam/refs/heads/main/.github/output//02-trening.webm"
+      },
       "content": "https://raw.githubusercontent.com/michal-michaluk/GrayManTeam/refs/heads/main/.github/output//02-trening.md"
     },
     {
