@@ -43,7 +43,7 @@ jobs:
 
       - name: Generate WebM versions
         run: |
-          find . -type f \( -name "*.webm" -o *.mp4" -o -name "*.mov" \) | grep -v 'github' | while read -r video; do
+          find . -type f \( -name "*.webm" -o -name "*.mp4" -o -name "*.mov" \) | grep -v 'github' | while read -r video; do
             relative_path=$(realpath --relative-to="$PWD" "$video")  
             output=".github/output/${relative_path%.*}.mp4"
             mkdir -p "$(dirname "$output")"
