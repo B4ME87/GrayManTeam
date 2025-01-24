@@ -1,4 +1,5 @@
 [![Generate Content JSON](https://github.com/michal-michaluk/GrayManTeam/actions/workflows/generate-content-json.yml/badge.svg)](https://github.com/michal-michaluk/GrayManTeam/actions/workflows/generate-content-json.yml)
+[![Optimize Videos](https://github.com/michal-michaluk/GrayManTeam/actions/workflows/optimize-videos.yml/badge.svg)](https://github.com/michal-michaluk/GrayManTeam/actions/workflows/optimize-videos.yml)
 
 # Instrukcja zmiany treści
 
