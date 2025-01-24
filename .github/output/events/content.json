@@ -3,7 +3,7 @@
     {
       "id": "01-hero",
       "video": {
-        "mp4": "https://content.grayman.pl/landing/01-hero.mp4"
+        "mp4": "https://content.grayman.pl/events/01-hero.mp4"
       },
       "content": [
         {
@@ -15,7 +15,7 @@
     {
       "id": "02-trening",
       "video": {
-        "mp4": "https://content.grayman.pl/landing/02-trening.mp4"
+        "mp4": "https://content.grayman.pl/events/02-trening.mp4"
       },
       "content": [
         {

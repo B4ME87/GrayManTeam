@@ -1,5 +1,5 @@
 {
   "scripts": {
-    "watch:content": "nodemon --ext md --watch landing/ .github/workflows/optymize-texts.mjs"
+    "watch:content": "CONTENT_SERVER=https://content.grayman.pl nodemon --ext md --watch . .github/workflows/optymize-texts.mjs"
   }
 }
