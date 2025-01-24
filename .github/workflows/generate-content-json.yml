@@ -1,0 +1,25 @@
+name: Generate Content JSON
+
+on:
+  push:
+    paths:
+      - 'src/content/**'
+  workflow_dispatch:
+
+env:
+  CONTENT_SERVER: "${{ secrets.CONTENT_SERVER }}"
+
+jobs:
+  generate-json:
+    runs-on: ubuntu-latest
+    if: false
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
+      - name: Generate content.json
+        run: node .github/workflows/generate-content-json.mjs
