@@ -2,9 +2,12 @@ name: Generate Content JSON
 
 on:
   push:
-    paths:
-      - '**'
-  workflow_dispatch:
+    branches:
+      - main
+  pull_request:
+    types: [opened, synchronize, reopened, closed]
+    branches:
+      - main
 
 env:
   CONTENT_SERVER: "${{ secrets.CONTENT_SERVER }}"
