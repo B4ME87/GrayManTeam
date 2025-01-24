@@ -3,31 +3,96 @@
     {
       "id": "01-hero",
       "video": {
-        "mp4": "https://raw.githubusercontent.com/michal-michaluk/GrayManTeam/refs/heads/main/.github/output//01-hero.mp4"
+        "mp4": "undefined/01-hero.mp4"
       },
-      "content": "https://raw.githubusercontent.com/michal-michaluk/GrayManTeam/refs/heads/main/.github/output//01-hero.md"
+      "content": [
+        {
+          "content": "# Personalne treningi strzeleckie\n\nTwój rozwój,  \nnasza misja"
+        }
+      ]
     },
     {
       "id": "02-trening",
       "video": {
-        "mp4": "https://raw.githubusercontent.com/michal-michaluk/GrayManTeam/refs/heads/main/.github/output//02-trening.mp4"
+        "mp4": "undefined/02-trening.mp4"
       },
-      "content": "https://raw.githubusercontent.com/michal-michaluk/GrayManTeam/refs/heads/main/.github/output//02-trening.md"
+      "content": [
+        {
+          "content": "## Trening\n\nNasze treningi to coś więcej niż standardowa nauka strzelectwa. Tworzymy przestrzeń, w której każdy – niezależnie od poziomu zaawansowania – może rozwijać swoje umiejętności w sposób dopasowany do indywidualnych potrzeb."
+        },
+        {
+          "collapse": true,
+          "header": "### Dla kogo?",
+          "content": "1.\tDla osób początkujących – Jeśli nigdy wcześniej nie miałeś styczności z bronią, nasze treningi są idealnym miejscem, by rozpocząć swoją przygodę ze strzelectwem. Zapewniamy Ci bezpieczne środowisko, solidne podstawy techniczne i praktyczne przygotowanie, które pozwoli Ci szybko poczuć się pewnie na strzelnicy. Co więcej, nawet jeśli dopiero zaczynasz proces zdobywania pozwolenia na broń, możesz trenować z nami na naszym sprzęcie. Dzięki temu do momentu otrzymania pozwolenia będziesz gotowy, by bezpiecznie i skutecznie strzelać, a nawet brać udział w zawodach.\n2.\tDla osób, które już strzelają – Jeżeli masz już doświadczenie w strzelectwie, ale chcesz rozwijać swoje umiejętności i poprawić wyniki, nasze treningi są dla Ciebie. Skupimy się na analizie Twojej techniki, wydobyciu pełnego potencjału i pomocy w osiągnięciu wyznaczonych celów. Dzięki indywidualnemu podejściu i planom treningowym, maksymalizujesz efekty i szybciej poprawiasz swój skill oraz performance.\n3.\tDla osób średniozaawansowanych i zaawansowanych – Jeśli masz już spore doświadczenie, ale czujesz, że utknąłeś w miejscu i nie potrafisz przeskoczyć pewnych barier w swoich wynikach, pomożemy Ci zidentyfikować problem. Dzięki szczegółowej analizie zmapujemy przyczyny trudności, a następnie zaproponujemy rozwiązania, które pozwolą Ci wejść na wyższy poziom i pokonać stagnację."
+        },
+        {
+          "collapse": true,
+          "header": "### Co nas wyróżnia?",
+          "content": "1.\tIndywidualne podejście – Oferujemy zarówno treningi jeden na jeden, jak i w małych grupach (maksymalnie 4 osoby). Mała grupa może być tworzona z Twoich znajomych lub rodziny, co zapewnia komfortowe i efektywne środowisko pracy.\n2.\tPlan treningowy między zajęciami – W przeciwieństwie do typowych szkoleń, nasze podejście obejmuje również czas między treningami. Dzięki indywidualnym planom treningowym możesz rozwijać swoje umiejętności samodzielnie, co przyspiesza progres i pozwala maksymalnie wykorzystać czas na strzelnicy.\n3.\tElastyczność i dostosowanie do Twoich potrzeb – Decydujesz, jak często chcesz się z nami spotykać, a my dostosowujemy tempo i zakres treningów do Twoich oczekiwań oraz celów."
+        },
+        {
+          "collapse": true,
+          "header": "### Dlaczego warto?",
+          "content": "Nasze treningi to gwarancja widocznych efektów w krótkim czasie. Niezależnie od tego, czy dopiero zaczynasz, czy chcesz podnieść swoje umiejętności na poziom mistrzowski, stworzymy dla Ciebie warunki do skutecznego rozwoju. Dzięki naszym metodom będziesz mógł bezpiecznie, efektywnie i pewnie rozwijać swoją pasję."
+        }
+      ]
     },
     {
       "id": "03-team",
       "video": {},
-      "content": "https://raw.githubusercontent.com/michal-michaluk/GrayManTeam/refs/heads/main/.github/output//03-team.md"
+      "content": [
+        {
+          "content": "## **GrayMan Team**\n\n### Elitarna Społeczność Cywilów o Doskonałym Wyszkoleniu\n\n![GrayMan Team Logo](./logo.jpeg)\n**GrayMan Team** to coś więcej niż grupa – to filozofia życia i społeczność, która łączy cywilów dążących do perfekcji w umiejętnościach przetrwania, samoobrony i strzelectwa. Naszym celem jest przygotowanie każdego członka do radzenia sobie w sytuacjach kryzysowych, które mogą wystąpić w codziennym życiu, takich jak zagrożenia życia, ataki, kataklizmy czy wypadki."
+        },
+        {
+          "collapse": true,
+          "header": "### Filozofia",
+          "content": "**GrayMan** to osoba niewidzialna – doskonale wyszkolony cywil, który potrafi wtopić się w otoczenie, unikać niepotrzebnych konfliktów i działać precyzyjnie, gdy sytuacja tego wymaga. Naszym celem jest nie tylko wyszkolenie strzeleckie, ale także przygotowanie do radzenia sobie w każdej sytuacji zagrożenia, szczególnie w środowisku miejskim."
+        },
+        {
+          "collapse": true,
+          "header": "### Co wyróżnia GrayMan Team?",
+          "content": "- **Low Profile** – uczymy, jak nie wyróżniać się z tłumu, zachowywać zimną krew i unikać niepotrzebnych konfrontacji. Bycie **GrayManem** oznacza działanie skuteczne, ale dyskretne.\n- **Wyszkolenie strzeleckie** – w naszej społeczności doskonalisz swoje umiejętności w zakresie strzelectwa sportowego, bojowego i taktycznego. Wspólnie trenujemy dynamiczne scenariusze, które mogą wystąpić w rzeczywistości.\n- **Samoobrona i walka wręcz** – uczymy, jak skutecznie obronić się w przypadku napaści, w tym ataków z użyciem noża czy innych niebezpiecznych narzędzi.\n- **Medycyna pola walki i pierwsza pomoc** – zdobywasz wiedzę i umiejętności niezbędne do ratowania życia w sytuacjach krytycznych, zarówno w środowisku miejskim, jak i w bardziej ekstremalnych warunkach.\n- **Świadomość sytuacyjna** – szkolimy, jak rozpoznawać potencjalne zagrożenia i reagować na nie, zanim przerodzą się w kryzys."
+        },
+        {
+          "collapse": true,
+          "header": "### Dlaczego warto dołączyć?",
+          "content": "**GrayMan Team** to jedyna taka społeczność w Polsce. Jesteśmy grupą ludzi, którzy dzielą wspólną pasję do strzelectwa i filozofii low profile, ale również wspólnie rozwijamy umiejętności przydatne w codziennym życiu. To nie tylko treningi – to także społeczność, w której wspieramy się nawzajem i wymieniamy doświadczenia."
+        },
+        {
+          "collapse": true,
+          "header": "### Co zyskujesz",
+          "content": "- Uczestnictwo w elitarnych treningach i szkoleniach, które nie są dostępne nigdzie indziej.\n- Możliwość stania się częścią grupy, która traktuje rozwój osobisty jako styl życia.\n- Regularne wspólne treningi, wyjścia i integracje w atmosferze wzajemnego wsparcia i szacunku."
+        },
+        {
+          "collapse": true,
+          "header": "### Dla kogo?",
+          "content": "Dla każdego, kto chce stać się osobą doskonale wyszkoloną – zarówno w zakresie strzelectwa, jak i radzenia sobie w trudnych sytuacjach życiowych. Niezależnie od poziomu zaawansowania, **GrayMan Team** to miejsce, w którym możesz rozwijać swoje umiejętności i być częścią elitarnej społeczności."
+        },
+        {
+          "collapse": true,
+          "header": "### Dołącz do **GrayMan Team**",
+          "content": "Jesteśmy gotowi, by pomóc Ci przejść drogę od amatora do doskonale wyszkolonego cywila. Gotowy na wyzwanie? Skontaktuj się z nami i zrób pierwszy krok, by dołączyć do **GrayMan Team**."
+        }
+      ]
     },
     {
       "id": "04-oferta",
       "video": {},
-      "content": "https://raw.githubusercontent.com/michal-michaluk/GrayManTeam/refs/heads/main/.github/output//04-oferta.md"
+      "content": [
+        {
+          "content": "## Oferta"
+        }
+      ]
     },
     {
       "id": "05-kontakt",
       "video": {},
-      "content": "https://raw.githubusercontent.com/michal-michaluk/GrayManTeam/refs/heads/main/.github/output//05-kontakt.md"
+      "content": [
+        {
+          "content": "## Kontakt\n\nZadzwoń lub napisz SMSa  \nby umówić się na pierwszy trening\n\n[+48 500 500 500](tel:+48500500500)"
+        }
+      ]
     }
   ]
 }

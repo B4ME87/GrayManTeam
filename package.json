@@ -1,0 +1,5 @@
+{
+  "scripts": {
+    "watch:content": "nodemon --watch '**/*.md' .github/workflows/optymize-texts.mjs"
+  }
+}

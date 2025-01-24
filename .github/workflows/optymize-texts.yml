@@ -13,7 +13,7 @@ env:
   CONTENT_SERVER: "${{ secrets.CONTENT_SERVER }}"
 
 jobs:
-  generate-json:
+  optymize-texts:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -24,7 +24,7 @@ jobs:
           node-version: '18'
 
       - name: Generate content.json
-        run: node .github/workflows/generate-content-json.mjs
+        run: node .github/workflows/optymize-texts.mjs
 
       - name: Fetch latest changes
         run: git pull origin main
