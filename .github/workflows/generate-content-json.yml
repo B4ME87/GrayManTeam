@@ -25,3 +25,12 @@ jobs:
 
       - name: Generate content.json
         run: node .github/workflows/generate-content-json.mjs
+
+      - name: Fetch latest changes
+        run: git pull origin master
+
+      - name: Commit & Push changes
+        uses: actions-js/push@master
+        with:
+          branch: master
+          github_token: ${{ secrets.GITHUB_TOKEN }}
