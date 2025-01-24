@@ -2,9 +2,7 @@
   "sections": [
     {
       "id": "01-hero",
-      "video": {
-        "mp4": "https://raw.githubusercontent.com/michal-michaluk/GrayManTeam/refs/heads/main/.github/output//01-hero.mp4"
-      },
+      "video": {},
       "content": "https://raw.githubusercontent.com/michal-michaluk/GrayManTeam/refs/heads/main/.github/output//01-hero.md"
     },
     {
