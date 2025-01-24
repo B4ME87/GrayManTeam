@@ -3,18 +3,19 @@
     {
       "id": "01-hero",
       "video": {
-        "mp4": "https://raw.githubusercontent.com/michal-michaluk/GrayManTeam/refs/heads/main/.github/output//01-hero.mp4"
+        "mp4": "undefined/01-hero.mp4"
       },
       "content": [
         {
-          "content": "# Personalne treningi strzeleckie\n\nTwój rozwój,  \nnasza kasa"
+          "content": "# Personalne treningi strzeleckie\n\nTwój rozwój,  \nnasza misja"
         }
-      ]
+      ],
+      "menuItem": "Personalne treningi strzeleckie"
     },
     {
       "id": "02-trening",
       "video": {
-        "mp4": "https://raw.githubusercontent.com/michal-michaluk/GrayManTeam/refs/heads/main/.github/output//02-trening.mp4"
+        "mp4": "undefined/02-trening.mp4"
       },
       "content": [
         {
@@ -35,14 +36,15 @@
           "header": "### Dlaczego warto?",
           "content": "Nasze treningi to gwarancja widocznych efektów w krótkim czasie. Niezależnie od tego, czy dopiero zaczynasz, czy chcesz podnieść swoje umiejętności na poziom mistrzowski, stworzymy dla Ciebie warunki do skutecznego rozwoju. Dzięki naszym metodom będziesz mógł bezpiecznie, efektywnie i pewnie rozwijać swoją pasję."
         }
-      ]
+      ],
+      "menuItem": "Trening"
     },
     {
       "id": "03-team",
       "video": {},
       "content": [
         {
-          "content": "## **GrayMan Team**\n\n### Elitarna Społeczność Cywilów o Doskonałym Wyszkoleniu\n\n![GrayMan Team Logo](./logo.jpeg)\n**GrayMan Team** to coś więcej niż grupa – to filozofia życia i społeczność, która łączy cywilów dążących do perfekcji w umiejętnościach przetrwania, samoobrony i strzelectwa. Naszym celem jest przygotowanie każdego członka do radzenia sobie w sytuacjach kryzysowych, które mogą wystąpić w codziennym życiu, takich jak zagrożenia życia, ataki, kataklizmy czy wypadki."
+          "content": "## GrayMan Team \n\n### Elitarna Społeczność Cywilów o Doskonałym Wyszkoleniu\n\n![GrayMan Team Logo](./logo.jpeg)\n**GrayMan Team** to coś więcej niż grupa – to filozofia życia i społeczność, która łączy cywilów dążących do perfekcji w umiejętnościach przetrwania, samoobrony i strzelectwa. Naszym celem jest przygotowanie każdego członka do radzenia sobie w sytuacjach kryzysowych, które mogą wystąpić w codziennym życiu, takich jak zagrożenia życia, ataki, kataklizmy czy wypadki."
         },
         {
           "collapse": true,
@@ -74,7 +76,8 @@
           "header": "### Dołącz do **GrayMan Team**",
           "content": "Jesteśmy gotowi, by pomóc Ci przejść drogę od amatora do doskonale wyszkolonego cywila. Gotowy na wyzwanie? Skontaktuj się z nami i zrób pierwszy krok, by dołączyć do **GrayMan Team**."
         }
-      ]
+      ],
+      "menuItem": "GrayMan Team"
     },
     {
       "id": "04-oferta",
@@ -83,7 +86,8 @@
         {
           "content": "## Oferta"
         }
-      ]
+      ],
+      "menuItem": "Oferta"
     },
     {
       "id": "05-kontakt",
@@ -92,7 +96,8 @@
         {
           "content": "## Kontakt\n\nZadzwoń lub napisz SMSa  \nby umówić się na pierwszy trening\n\n[+48 500 500 500](tel:+48500500500)"
         }
-      ]
+      ],
+      "menuItem": "Kontakt"
     }
   ]
 }

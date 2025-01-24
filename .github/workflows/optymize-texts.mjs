@@ -61,7 +61,18 @@ const groupedFiles = files.reduce((acc, file) => {
   const ext = path.extname(file).toLowerCase();
   if (ext === '.md') {
     const content = fs.readFileSync(path.join(contentDir, file), 'utf-8');
-    acc[prefix].content = processMarkdownContent(content);
+    const processedContent = processMarkdownContent(content);
+    acc[prefix].content = processedContent;
+    
+    // Dodaj menuItem - znajdź pierwszy nagłówek
+    if (processedContent.length > 0) {
+      const firstContent = processedContent[0].content;
+      // Szukaj pierwszego nagłówka w formacie markdown (# lub ## lub ### itd.)
+      const headerMatch = firstContent.match(/^#+\s+(.+)$/m);
+      if (headerMatch) {
+        acc[prefix].menuItem = headerMatch[1].trim();
+      }
+    }
   } else if (ext === '.webm') {
     acc[prefix].video.webm = `${process.env.CONTENT_SERVER}/${file}`;
   } else if (ext === '.mp4') {

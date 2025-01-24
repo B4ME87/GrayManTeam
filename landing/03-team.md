@@ -1,4 +1,4 @@
-## **GrayMan Team**
+## GrayMan Team 
 
 ### Elitarna Społeczność Cywilów o Doskonałym Wyszkoleniu
 
